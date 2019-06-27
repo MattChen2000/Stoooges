@@ -31,7 +31,7 @@ def get_url_list():
 def get_html_from_url(url_list, html_dir):
       leng = len(url_list)
       if not os.path.exists(html_dir):
-            os.makedirs(html_dir)
+            os.makedirs(html_dir) 
       for i in range(leng):
             print('{} // {}:\nSpidering {}'.format(str(i+1), str(leng), url_list[i]))
             filename = '{}.html'.format(i+1)
